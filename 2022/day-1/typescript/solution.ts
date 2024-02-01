@@ -13,5 +13,7 @@ const summedCalories = file.split('\n').reduce(
     [0]
 )
 
-const result = summedCalories.sort((a, b) => b - a)[0]
-console.log('result: ', result)
+const sorted = summedCalories.sort((a, b) => b - a)
+console.log('result to part 1: ', sorted[0])
+
+console.log('result to part 2: ', sorted[0] + sorted[1] + sorted[2])
